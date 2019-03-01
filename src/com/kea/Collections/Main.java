@@ -10,8 +10,11 @@ public class Main {
         l.add(1);
         l.add(3);
         l.add(13);
+        System.out.println("Antal  elementer: " + l.size());
+        System.out.println("Antal unikke elementer: " + countUnique(l));
         System.out.println(l);
         sortAndRemoveDuplicates(l);
+
         System.out.println(l);
 
     }
@@ -21,5 +24,10 @@ public class Main {
         for (Integer i: set){
             list.add(i);
         }
+    }
+
+    public static int countUnique(List<Integer> list){
+        Set<Integer> set = new HashSet<Integer>(list);
+        return set.size();
     }
 }
