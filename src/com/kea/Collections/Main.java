@@ -14,7 +14,8 @@ public class Main {
         System.out.println("Antal unikke elementer: " + countUnique(l));
         System.out.println(l);
         sortAndRemoveDuplicates(l);
-
+        System.out.println("Antal  elementer: " + l.size());
+        System.out.println("Antal unikke elementer: " + countUnique(l));
         System.out.println(l);
 
     }
